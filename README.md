@@ -6,6 +6,7 @@
 
 ### Educação:
   Doutorado em Física — UFABC - 2022 - 2026
+  
   Doutorado Sanduíche (2024) - Istituto Nazionale di Fisica Nucleare di Padova
   
   Mestrado em Física — UFABC - 2020 - 2022
@@ -16,7 +17,9 @@
 
 ### Publicações:
     Nelson-Barr Models with Vector-Like Quark Doublets  arXiv: 2604.02506
+    
     Effective description of Nelson–Barr models and the theta parameter arXiv:2506.03257
+    
     Explicit parametrization of more than one vector-like quark of Nelson-Barr type  rXiv:2304.06078 
     
   
