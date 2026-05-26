@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,10 @@
       box-sizing:border-box;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       background:#0f172a;
       color:#e2e8f0;
@@ -26,40 +31,84 @@
       line-height:1.7;
     }
 
+    a{
+      text-decoration:none;
+    }
+
     .container{
       width:90%;
-      max-width:1000px;
+      max-width:1100px;
       margin:auto;
     }
 
     header{
-      padding:120px 0 80px 0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
       text-align:center;
     }
 
-    h1{
-      font-size:4rem;
-      margin-bottom:10px;
+    .hero h1{
+      font-size:4.5rem;
+      margin-bottom:20px;
+      line-height:1.1;
     }
 
-    h3{
-      color:#94a3b8;
+    .hero h3{
+      font-size:1.4rem;
       font-weight:400;
+      color:#94a3b8;
       margin-bottom:30px;
     }
 
-    .intro{
-      font-size:1.1rem;
+    .hero p{
+      max-width:700px;
+      margin:auto;
       color:#cbd5e1;
+      font-size:1.1rem;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 24px;
+      border-radius:12px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .primary{
+      background:#38bdf8;
+      color:#0f172a;
+    }
+
+    .primary:hover{
+      opacity:0.85;
+    }
+
+    .secondary{
+      border:1px solid #334155;
+      color:#e2e8f0;
+    }
+
+    .secondary:hover{
+      background:#1e293b;
     }
 
     section{
-      padding:50px 0;
+      padding:90px 0;
     }
 
     h2{
-      margin-bottom:25px;
-      font-size:2rem;
+      font-size:2.2rem;
+      margin-bottom:35px;
       border-left:4px solid #38bdf8;
       padding-left:15px;
     }
@@ -67,9 +116,15 @@
     .card{
       background:#111827;
       border:1px solid #1e293b;
-      border-radius:16px;
-      padding:25px;
-      margin-bottom:20px;
+      border-radius:18px;
+      padding:30px;
+      margin-bottom:25px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      border-color:#38bdf8;
+      transform:translateY(-4px);
     }
 
     ul{
@@ -77,29 +132,63 @@
     }
 
     li{
-      margin-bottom:12px;
+      margin-bottom:15px;
+      color:#cbd5e1;
     }
 
-    a{
+    .publication{
+      margin-bottom:25px;
+    }
+
+    .publication strong{
+      color:white;
+      display:block;
+      margin-bottom:6px;
+    }
+
+    .project-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .project-card{
+      background:#111827;
+      border:1px solid #1e293b;
+      border-radius:18px;
+      padding:25px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      border-color:#38bdf8;
+      transform:translateY(-4px);
+    }
+
+    .project-card h3{
+      margin-bottom:15px;
+    }
+
+    .project-card p{
+      color:#94a3b8;
+      margin-bottom:20px;
+    }
+
+    .project-link{
       color:#38bdf8;
-      text-decoration:none;
-    }
-
-    .publications p{
-      margin-bottom:18px;
+      font-weight:600;
     }
 
     .tools{
       display:flex;
-      gap:20px;
+      gap:25px;
       flex-wrap:wrap;
       align-items:center;
-      margin-top:20px;
     }
 
     .tools img{
-      width:50px;
-      height:50px;
+      width:55px;
+      height:55px;
       transition:0.3s;
     }
 
@@ -107,22 +196,30 @@
       transform:scale(1.1);
     }
 
+    .contact{
+      font-size:1.1rem;
+    }
+
     footer{
       padding:40px 0;
       text-align:center;
-      color:#64748b;
       border-top:1px solid #1e293b;
+      color:#64748b;
       margin-top:40px;
     }
 
     @media(max-width:768px){
 
-      h1{
-        font-size:2.7rem;
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .hero h3{
+        font-size:1.1rem;
       }
 
       h2{
-        font-size:1.5rem;
+        font-size:1.7rem;
       }
 
     }
@@ -133,15 +230,34 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="container hero">
 
-      <h1>Olá 👋, eu sou Gustavo Alves</h1>
+      <h1>Olá, meu nome é Gustavo Alves 👋</h1>
 
-      <h3>Um físico do Brasil</h3>
+      <h3>
+        Físico, pesquisador e entusiasta de Ciência de Dados
+      </h3>
 
-      <p class="intro">
-        🔭 Atualmente estou trabalhando em projetos de Ciência de Dados
+      <p>
+        Doutorando em Física pela UFABC com experiência em modelagem matemática,
+        análise estatística e pesquisa quantitativa. Atualmente em transição
+        para Data Science e Machine Learning.
       </p>
+
+      <div class="buttons">
+
+        <a href="https://github.com/GustavoHSALves"
+           target="_blank"
+           class="btn primary">
+           GitHub
+        </a>
+
+        <a href="#projetos"
+           class="btn secondary">
+           Ver Projetos
+        </a>
+
+      </div>
 
     </div>
   </header>
@@ -152,82 +268,175 @@
       <h2>Educação</h2>
 
       <div class="card">
+
         <ul>
-          <li>Doutorado em Física — UFABC (2022 - 2026)</li>
 
-          <li>Doutorado Sanduíche — Istituto Nazionale di Fisica Nucleare di Padova (2024)</li>
+          <li>
+            Doutorado em Física — UFABC (2022 - 2026)
+          </li>
 
-          <li>Mestrado em Física — UFABC (2020 - 2022)</li>
+          <li>
+            Doutorado Sanduíche — Istituto Nazionale di Fisica Nucleare di Padova (2024)
+          </li>
 
-          <li>Bacharelado em Física — UFABC (2015 - 2019)</li>
+          <li>
+            Mestrado em Física — UFABC (2020 - 2022)
+          </li>
 
-          <li>Bacharelado em Ciências e Tecnologia — UFABC (2015 - 2019)</li>
+          <li>
+            Bacharelado em Física — UFABC (2015 - 2019)
+          </li>
+
+          <li>
+            Bacharelado em Ciências e Tecnologia — UFABC (2015 - 2019)
+          </li>
+
         </ul>
+
       </div>
 
     </div>
   </section>
 
-  <section class="publications">
+  <section id="projetos">
+
+    <div class="container">
+
+      <h2>Projetos</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+
+          <h3>📊 Projetos de Ciência de Dados</h3>
+
+          <p>
+            Projetos envolvendo análise de dados, visualização,
+            modelagem estatística e Machine Learning em Python.
+          </p>
+
+          <a href="https://github.com/GustavoHSALves"
+             target="_blank"
+             class="project-link">
+             Ver projetos →
+          </a>
+
+        </div>
+
+        <div class="project-card">
+
+          <h3>🤖 Machine Learning</h3>
+
+          <p>
+            Estudos e aplicações de modelos supervisionados,
+            validação cruzada, regressão e classificação.
+          </p>
+
+          <a href="https://github.com/GustavoHSALves"
+             target="_blank"
+             class="project-link">
+             Explorar →
+          </a>
+
+        </div>
+
+        <div class="project-card">
+
+          <h3>🔬 Pesquisa Científica</h3>
+
+          <p>
+            Pesquisa em Física Teórica, violação CP,
+            modelos Nelson-Barr e EFTs.
+          </p>
+
+          <a href="https://arxiv.org"
+             target="_blank"
+             class="project-link">
+             Publicações →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
     <div class="container">
 
       <h2>Publicações</h2>
 
       <div class="card">
 
-        <p>
-          <strong>Nelson-Barr Models with Vector-Like Quark Doublets</strong><br>
+        <div class="publication">
+          <strong>
+            Nelson-Barr Models with Vector-Like Quark Doublets
+          </strong>
+
           arXiv:2604.02506
-        </p>
+        </div>
 
-        <p>
-          <strong>Effective description of Nelson–Barr models and the theta parameter</strong><br>
+        <div class="publication">
+          <strong>
+            Effective description of Nelson–Barr models and the theta parameter
+          </strong>
+
           arXiv:2506.03257
-        </p>
+        </div>
 
-        <p>
-          <strong>Explicit parametrization of more than one vector-like quark of Nelson-Barr type</strong><br>
+        <div class="publication">
+          <strong>
+            Explicit parametrization of more than one vector-like quark of Nelson-Barr type
+          </strong>
+
           arXiv:2304.06078
-        </p>
+        </div>
 
       </div>
 
     </div>
+
   </section>
 
   <section>
+
     <div class="container">
 
       <h2>Contato</h2>
 
-      <div class="card">
-        <p>
-          📧 gustavohenriquesalves@gmail.com
-        </p>
+      <div class="card contact">
+
+        📧 gustavohenriquesalves@gmail.com
+
       </div>
 
     </div>
+
   </section>
 
   <section>
+
     <div class="container">
 
-      <h2>Idiomas e Ferramentas</h2>
+      <h2>Ferramentas</h2>
 
       <div class="card">
 
         <div class="tools">
 
-          <a href="https://www.mysql.com/" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg">
+          <a href="https://www.python.org/" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
           </a>
 
           <a href="https://pandas.pydata.org/" target="_blank">
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg">
           </a>
 
-          <a href="https://www.python.org" target="_blank">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+          <a href="https://www.mysql.com/" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg">
           </a>
 
           <a href="https://seaborn.pydata.org/" target="_blank">
@@ -239,6 +448,7 @@
       </div>
 
     </div>
+
   </section>
 
   <footer>
@@ -246,4 +456,5 @@
   </footer>
 
 </body>
+
 </html>
