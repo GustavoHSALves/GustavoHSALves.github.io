@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gustavo Alves | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#0f172a;
+      color:#e2e8f0;
+      font-family:'Inter', sans-serif;
+      line-height:1.7;
+    }
+
+    .container{
+      width:90%;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    header{
+      padding:120px 0 80px 0;
+      text-align:center;
+    }
+
+    h1{
+      font-size:4rem;
+      margin-bottom:10px;
+    }
+
+    h3{
+      color:#94a3b8;
+      font-weight:400;
+      margin-bottom:30px;
+    }
+
+    .intro{
+      font-size:1.1rem;
+      color:#cbd5e1;
+    }
+
+    section{
+      padding:50px 0;
+    }
+
+    h2{
+      margin-bottom:25px;
+      font-size:2rem;
+      border-left:4px solid #38bdf8;
+      padding-left:15px;
+    }
+
+    .card{
+      background:#111827;
+      border:1px solid #1e293b;
+      border-radius:16px;
+      padding:25px;
+      margin-bottom:20px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    li{
+      margin-bottom:12px;
+    }
+
+    a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    .publications p{
+      margin-bottom:18px;
+    }
+
+    .tools{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:20px;
+    }
+
+    .tools img{
+      width:50px;
+      height:50px;
+      transition:0.3s;
+    }
+
+    .tools img:hover{
+      transform:scale(1.1);
+    }
+
+    footer{
+      padding:40px 0;
+      text-align:center;
+      color:#64748b;
+      border-top:1px solid #1e293b;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:2.7rem;
+      }
+
+      h2{
+        font-size:1.5rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <h1>Olá 👋, eu sou Gustavo Alves</h1>
+
+      <h3>Um físico do Brasil</h3>
+
+      <p class="intro">
+        🔭 Atualmente estou trabalhando em projetos de Ciência de Dados
+      </p>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <h2>Educação</h2>
+
+      <div class="card">
+        <ul>
+          <li>Doutorado em Física — UFABC (2022 - 2026)</li>
+
+          <li>Doutorado Sanduíche — Istituto Nazionale di Fisica Nucleare di Padova (2024)</li>
+
+          <li>Mestrado em Física — UFABC (2020 - 2022)</li>
+
+          <li>Bacharelado em Física — UFABC (2015 - 2019)</li>
+
+          <li>Bacharelado em Ciências e Tecnologia — UFABC (2015 - 2019)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="publications">
+    <div class="container">
+
+      <h2>Publicações</h2>
+
+      <div class="card">
+
+        <p>
+          <strong>Nelson-Barr Models with Vector-Like Quark Doublets</strong><br>
+          arXiv:2604.02506
+        </p>
+
+        <p>
+          <strong>Effective description of Nelson–Barr models and the theta parameter</strong><br>
+          arXiv:2506.03257
+        </p>
+
+        <p>
+          <strong>Explicit parametrization of more than one vector-like quark of Nelson-Barr type</strong><br>
+          arXiv:2304.06078
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Contato</h2>
+
+      <div class="card">
+        <p>
+          📧 gustavohenriquesalves@gmail.com
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Idiomas e Ferramentas</h2>
+
+      <div class="card">
+
+        <div class="tools">
+
+          <a href="https://www.mysql.com/" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg">
+          </a>
+
+          <a href="https://pandas.pydata.org/" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg">
+          </a>
+
+          <a href="https://www.python.org" target="_blank">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+          </a>
+
+          <a href="https://seaborn.pydata.org/" target="_blank">
+            <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Gustavo Alves
+  </footer>
+
+</body>
+</html>
