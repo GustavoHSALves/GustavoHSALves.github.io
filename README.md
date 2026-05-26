@@ -24,7 +24,7 @@
     
   
 
-<h3 align="left">Entre em contato comigo:</h3>
+<h3 align="left">Entre em contato comigo:gustavohenriquesalves@gmail.com</h3>
 <p align="left">
 </p>
 
