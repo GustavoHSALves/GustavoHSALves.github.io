@@ -7,8 +7,11 @@
 ### Educação:
   Doutorado em Física — UFABC - 2022 - 2026
   Doutorado Sanduíche (2024) - Istituto Nazionale di Fisica Nucleare di Padova
+  
   Mestrado em Física — UFABC - 2020 - 2022
+  
   Bacharelado em Física — UFABC - 2015 - 2019
+  
   Bacharelado em Ciências e Tecnologia — UFABC - 2015 - 2019
 
 ### Publicações:
